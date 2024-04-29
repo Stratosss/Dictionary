@@ -4,7 +4,7 @@ import axios from "axios"
 
 const app = express();
 const port =3000;
-const API = "YOUR_API";
+const api_key = "YOUR_API";
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 app.post("/submit", async (req,res)=>{
     const word = req.body.word;
     try{
-        const response = await axios.get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${API}`);
+        const response = await axios.get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=${api_key}`);
         const data = response.data
         res.render("index.ejs", {word : word, content : data});
     }catch (error){
