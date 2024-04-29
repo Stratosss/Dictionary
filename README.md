@@ -2,7 +2,7 @@
 ## Overview
 (pending)
 ### Prerequisites
--Go to the directory where that folder lives in and install the necessary packages by typing the following commands in terminal:
+- Go to the directory where that folder lives in and install the necessary packages by typing the following commands in terminal:
   - npm init -y
   - npm i ejs
   - npm i express
