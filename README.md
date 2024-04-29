@@ -16,4 +16,6 @@ The webpage takes a word from the user and returns the pronunciation (if it exis
 - After installing the prerequisites, initialize the application by typing either "node index.js" or "nodemon index.js".
 - Open a browser and go to "localhost:3000"
 
+![Screenshot 2](https://github.com/Stratosss/dictionary_API/assets/157527268/74a953eb-f59e-44d1-876e-187a5e46f3a9)
+
 ![Screenshot 1](https://github.com/Stratosss/dictionary_API/assets/157527268/b2054f0c-b3db-466b-ba0f-a762c0b8278e)
