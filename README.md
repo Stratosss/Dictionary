@@ -17,3 +17,7 @@ The webpage takes a word from the user and returns the pronunciation (if it exis
 - Open a browser and go to "localhost:3000"
 
 ![Screenshot 1](https://github.com/Stratosss/dictionary_API/assets/157527268/0197be85-f0c3-4745-8cc3-cb114429d1b3)
+![Screenshot 2](https://github.com/Stratosss/dictionary_API/assets/157527268/4cacd5b2-1b05-4972-a873-991e81953f84)
+![Screenshot 3](https://github.com/Stratosss/dictionary_API/assets/157527268/dfc2142b-aaa6-4e35-90df-676da3afb17a)
+![Screenshot 4](https://github.com/Stratosss/dictionary_API/assets/157527268/f295652a-0cab-4ea5-87eb-cbd89b8e6e68)
+
