@@ -10,6 +10,7 @@ See it live on: https://dictionary-x9lr.onrender.com/
   - npm i express
   - npm i body-parser
   - npm i axios
+  - in the package.json type: "type": "module"
 - This application requires an API key from https://www.dictionaryapi.com/
   - Create an API key for : "Merriam-Webster's Collegiate® Dictionary with Audio"
   - Copy and paste the API key in index.js file.
