@@ -29,17 +29,13 @@ app.post("/search", async (req,res)=>{
           const data = response.data
           if (data[0].meta){
           res.render("index.ejs", {word : word, content : data});
-          console.log("1")
           } else {
-            console.log("2")
             res.render("index.ejs", {message : "Word not found!😩", word: false, trigger : true});
           }
       }catch (error){
-        console.log("3")
           console.log(error);
           res.render("index.ejs", {message : "Word not found!😩", word: false, trigger : true})
       }} else {
-        console.log("4")
         res.render("index.ejs", {message : "Please type a word!😊", word: false, trigger : true});
       }     
 });
