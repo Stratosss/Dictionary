@@ -23,7 +23,6 @@
         </form>
         <% if (locals.word) { %>
             <div class="sub-container">
-                <div class="sub-container2">
                     <h3><%= word %></h3>
                     <% if (locals.content[0].hwi.prs){ %>
                     <p id="pronunciation">/<%= content[0].hwi.prs[0].mw %>/</p>
@@ -34,7 +33,6 @@
                         <span id="item"> ‣ <%= item.meta.id %> </span> <br><span id="shortdef"><%= item.shortdef %></span>
                     </div>
                     <%});%>   
-                </div>
             </div>
         <%} else if (locals.trigger) {%>
             <h3><%= message %></h3>
