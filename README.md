@@ -1,4 +1,4 @@
-# dictionary_API
+# dictionary
 ## Overview
 This project concerns a website that was built using the Express/Node.js platform, with the Axios HTTP client, and which integrates an API from the very famous online dictionary Merriam-Webster (https://www.dictionaryapi.com/). 
 The webpage takes a word from the user and returns the pronunciation (if it exists) and an array of definitions (if they exist). 
