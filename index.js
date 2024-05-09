@@ -5,7 +5,7 @@ import axios from "axios"
 const app = express();
 const port =3000;
 
-const api_key = "966c5bc5-18b6-49eb-9953-8ff4b0b366b5";
+const api_key = "Type-Key-Here";
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
