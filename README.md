@@ -17,6 +17,8 @@ See it live on: https://dictionary-x9lr.onrender.com/
 ### Directions:
 - After installing the prerequisites, initialize the application by typing either "node index.js" or "nodemon index.js".
 - Open a browser and go to "localhost:3000"
+### Latest Addition:
+- Sound pronunciation button was added!
 
 ![Screenshot 1](https://github.com/Stratosss/dictionary_API/assets/157527268/0197be85-f0c3-4745-8cc3-cb114429d1b3)
 ![Screenshot 2](https://github.com/Stratosss/dictionary_API/assets/157527268/4cacd5b2-1b05-4972-a873-991e81953f84)
