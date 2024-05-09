@@ -1,0 +1,139 @@
+html,body {
+    height:100%;
+}
+body {
+    position: relative;
+    font-family: monospace;
+    background-color:rgb(226, 250, 227);
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.sub-container{
+    background-color: azure;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+    padding: 1% 5% 5% 5%;
+}
+#speaker{
+    position: relative;
+    display: inline-block;
+}
+h1{
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    background: linear-gradient(to right,#f12222,#2500fa);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h2{
+    font-family: "Dancing Script";
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+h3{
+    font-family: "Jersey 20", sans-serif;
+    font-size: 40px;
+    margin-bottom: 0;
+    padding:0;
+    width: auto;
+    display:inline-block;
+}
+h4{
+    font-family: "Jersey 20", sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 0;
+    padding:0;
+}
+#pronunciation{
+    font-family: "Jersey 20", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding:0;
+    width: auto;
+}
+#item{
+    font-family:"Work Sans", sans-serif;
+    font-size: 20px;
+}
+#shortdef{
+    font-family:"Work Sans", sans-serif;
+    font-size: 15px;
+}
+#def{
+    text-align: left;
+    list-style: none;
+    margin-bottom:1%;
+}
+#input{
+    position: relative;
+    width:30%;
+    padding: 5px;
+    margin-bottom: 5%;
+}
+form{
+    width:30%;
+    display: inline;
+}
+button{
+    position: absolute;
+    background-color: transparent;
+    border:none;
+}
+footer { 
+    position: relative;
+    bottom: 0; 
+    left: 10px; 
+    width: 400px;
+    margin:0;
+}
+
+@media (max-width:735px){
+    .container{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #input{
+        width:60%;
+    }
+    form{
+        width: 50%;
+        }
+    h3{
+        font-size: 25px;  
+    }
+    h4{
+        font-size: 18px;
+    }
+    #pronunciation{
+        font-size: 15px;
+
+    }
+    #item{
+        font-size: 15px;
+    }
+    #shortdef{
+        font-size: 11px;
+    }
+    footer{
+        font-size: 9px;
+    }
+}
