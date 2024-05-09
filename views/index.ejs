@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><a href="/">Dictionary</a></h1>
+        <h2>Search a word in English!</h2>
+        <div id="test"><form action="/search" id="form" class="form" method="POST">
+            <!-- <label for="word">First name:</label><br> -->
+            <input type="text" id="input" name="word" placeholder="Type your word here" autofocus autocomplete="off">
+        </form>
+        <button type="submit" form="form"><svg id="icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg></button></div>
+        <% if (locals.word) { %>
+            <div class="sub-container">
+                    <h3><%= word %></h3>
+                    <% if (locals.content[0].hwi.prs){ %>
+                    <p id="pronunciation">/<%= content[0].hwi.prs[0].mw %>/ <button type="button" id="speaker" onclick="playSound()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                        <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                      </svg></button></p>
+                    <%}%>
+                    <h4>Definition:</h4>
+                    <% content.forEach((item) =>{ %>
+                    <div id="def">
+                        <span id="item"> ‣ <%= item.meta.id %> </span> <br><span id="shortdef"><%= item.shortdef %></span>
+                    </div>
+                    <%});%>   
+            </div>
+        <%} else if (locals.trigger) {%>
+            <h3><%= message %></h3>
+        <%}%>
+    </div>
+    <%- include("partials/footer.ejs") %>
+    <script>
+    function playSound() {
+        let audio = "<%= sound %>";
+        console.log(audio)
+        let subDir =audio[0];
+        if (audio.slice(0,3)==="bix"){
+            subDir = "bix";
+        } else if (audio.slice(0,2) ==="gg"){
+            subDir = "gg";
+        } 
+        let url = `https://media.merriam-webster.com/audio/prons/en/us/mp3/${subDir}/${audio}.mp3`
+        let a = new Audio(url);
+        a.play();
+    }
+    </script>
+</body>
+</html>
