@@ -14,6 +14,7 @@ See it live on: https://dictionary-x9lr.onrender.com/
 - This application requires an API key from https://www.dictionaryapi.com/
   - Create an API key for : "Merriam-Webster's Collegiate® Dictionary with Audio"
   - Copy and paste the API key in index.js file.
+- To run it in localhost, install node.js (URL: https://nodejs.org/en/download)
 ### Directions:
 - After installing the prerequisites, initialize the application by typing either "node index.js" or "nodemon index.js".
 - Open a browser and go to "localhost:3000"
