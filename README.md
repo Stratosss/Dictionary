@@ -10,15 +10,15 @@ See it live on (it might take a while to load the page): https://dictionary-x9lr
   - npm i express
   - npm i body-parser
   - npm i axios
-  - in the package.json type: "type": "module"
+- Ιn the package.json type: "type": "module"
 - This application requires an API key from https://www.dictionaryapi.com/
   - Create an API key for : "Merriam-Webster's Collegiate® Dictionary with Audio"
   - Copy and paste the API key in index.js file.
 - To run it in localhost, install node.js from: https://nodejs.org/en/download
-### Directions:
+### Directions
 - After installing the prerequisites, initialize the application by typing either "node index.js" or "nodemon index.js".
 - Open a browser and go to "localhost:3000"
-### Latest Update:
+### Updates
 - 9/5/2024: Sound pronunciation button was added! 
 
 ![Screenshot 1](https://github.com/Stratosss/dictionary_API/assets/157527268/0197be85-f0c3-4745-8cc3-cb114429d1b3)
